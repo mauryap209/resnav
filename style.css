@@ -100,13 +100,14 @@ body {
     }
     @media (max-width: 768px) {
       .content h1 {
-        font-size: 30px;
+        /* font-size: 30px; */
        color: red;
        /* align-items: center; */
        text-align: center;
       }
       .content p {
         font-size: 20px;
+        font-weight: bold;
         text-align: center;
       }
       .content button {
