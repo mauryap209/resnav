@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/035/188/741/non_2x/abstract-corporate-background-with-blue-and-gold-color-illustration-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: #333; */
+      /* position: fixed; */
+      padding: 10px 20px;
+    }
+    nav .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 24px;
+        /* color: white; */
+        font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links a:hover {
+      color: #ff6347; 
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background: black;
+      margin: 3px;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+       
+        text-align: center;
+        
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: black;
+    }
+    .content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .content p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .content button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ff6347; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .content h1 {
+        font-size: 36px;
+      }
+      .content p {
+        font-size: 20px;
+      }
+      .content button {
+        font-size: 16px;
+      }
+    }
